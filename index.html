@@ -494,7 +494,7 @@
   }
 
   footer p {
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.95);
     font-size: 12px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -514,7 +514,7 @@
 <body>
 
 <header>
-  <span class="header-name">Craig Upton — Product Designer</span>
+  <span class="header-name">Craig Upton — Senior Product Designer</span>
   <span class="header-tag">Case Study</span>
 </header>
 
@@ -526,7 +526,7 @@
     <div class="meta-row">
       <div class="meta-item">
         <label>My Role</label>
-        <span>Product Designer</span>
+        <span>Senior Product Designer</span>
       </div>
       <div class="meta-item">
         <label>Scope</label>
@@ -549,9 +549,9 @@
   <div class="container">
     <p class="section-label">Overview</p>
     <h2>The Problem</h2>
-    <p>Hertz's checkout had known UX problems, had gone largely without active design iteration, and was falling behind competitors on clarity and user trust. The goal was straightforward but significant: increase conversion, reduce friction, and drive revenue across both US and global markets. Conversion was measured across two primary cohorts: members and non-members, across responsive web layouts. The gap was significant: members converted at 30–40%, while non-members sat at just 5–10%.
+    <p>Hertz's checkout had gone largely without active design iteration and was falling behind competitors on clarity and trust. The goal: increase conversion, reduce friction, and drive revenue across US and global markets. Two cohorts defined the work — members converting at 30–40%, non-members at just 5–10%.
 
-The gap itself was the diagnosis. Members are high-intent users who've already formed a relationship with the brand, know what they're getting, and move through checkout with confidence. Non-members arrive with none of that context. Every ambiguous pricing line, every unanswered question about what's included, every moment of uncertainty about fees at pickup is a reason to abandon. The checkout was designed as if all users arrived with the same level of trust. They don't. The design challenge wasn't to fix a broken flow. It was to rebuild the checkout around the skeptic: a first-time user who needed trust signals, clear value propositions, and transparent pricing to feel confident enough to book.</p>
+The gap was the diagnosis. Members know the brand and move through checkout with confidence. Non-members arrive with none of that context — every ambiguous pricing line, every unanswered question about fees is a reason to abandon. The checkout was designed as if all users arrived with the same level of trust. The design challenge wasn't to fix a broken flow. It was to rebuild it around the skeptic: a first-time user who needed transparent pricing and clear value to feel confident enough to book.</p>
     <p>I was brought in as the product designer to own this problem end to end: identifying what to test, writing A/B hypotheses, designing variants, and working within a set of meaningful constraints that shaped every decision.</p>
 
     <div class="callout">
@@ -624,8 +624,6 @@ The gap itself was the diagnosis. Members are high-intent users who've already f
   <div class="container">
     <p class="section-label">Process</p>
     <h2>How I Approached the Work</h2>
-    <p>The work unfolded in phases, moving from audit and framing through to iterative testing. Hypotheses weren't generated randomly. Each one came from a specific observed failure mode in the checkout experience.</p>
-
     <div class="phase-block">
       <div class="phase-num">Phase 01</div>
       <h3>Audit & Competitive Benchmarking</h3>
@@ -635,25 +633,25 @@ The gap itself was the diagnosis. Members are high-intent users who've already f
     <div class="phase-block">
       <div class="phase-num">Phase 02</div>
       <h3>Hypothesis Development</h3>
-      <p>I wrote all A/B hypotheses myself, grounding each one in a specific friction point identified in the audit. Five tests were executed during my time at Hertz, three of which proved measurable conversion lift. A further 8–12 concepts were fully hypothesized and designed, ready to run, when I left the role. The pipeline was built; the testing program had real momentum behind it.</p>
+      <p>I wrote the A/B hypotheses, grounding each one in a specific friction point identified in the audit. Five tests were executed during my time at Hertz, three of which proved measurable conversion lift. A further 8–12 concepts were fully hypothesized and designed, ready to run, when I left the role. The pipeline was built; the testing program had real momentum behind it.</p>
     </div>
 
     <div class="phase-block">
       <div class="phase-num">Phase 03</div>
-      <h3>Friction Reduction & Form UX</h3>
-      <p>Conversion was always the headline metric, but friction was the underlying mechanism. A user who hits a confusing form field, an unclear error state, or an ambiguous input requirement doesn't necessarily abandon immediately, but the accumulated friction erodes confidence. Through the checkout audit I identified a significant number of form issues specific to the non-member path, where users are completing fields for the first time without the autofill advantages members benefit from. To address this I built a functional prototype demonstrating correct form field validation, error handling, and interaction behaviors, making the case for improvements to the development team with working, testable code rather than static annotations.</p>
+      <h3>AI-Assisted Prototyping</h3>
+      <p>Hertz was where I first integrated AI tooling into my design workflow in a meaningful way. Rather than producing static annotations or wireframes to communicate a test variant, I used AI-assisted prototyping to generate functional HTML prototypes quickly, compressing the time between identifying a friction point and having something testable in front of stakeholders. This directly contributed to the volume of the hypothesis pipeline: faster prototyping means more concepts reach the point of being fully designed and ready to test. It also reduced implementation drift, giving developers a working reference rather than a spec to interpret.</p>
     </div>
 
     <div class="phase-block">
       <div class="phase-num">Phase 04</div>
-      <h3>Design & Iteration</h3>
-      <p>Variants were designed to test one meaningful change at a time where possible, isolating variables to generate clean learnings. Early tests focused on the areas I expected would have the most leverage: trust signals, protection module clarity, and value proposition framing. Results were mixed in the early phase, which shaped the direction of subsequent hypotheses.</p>
+      <h3>Friction Reduction & Form UX</h3>
+      <p>Friction was the underlying mechanism behind every conversion failure. Through the checkout audit I identified a significant number of form issues specific to the non-member path, where users are completing fields for the first time without the autofill advantages members benefit from. To make the case for fixes, I built a functional prototype demonstrating correct form validation, error handling, and interaction behaviors — working, testable code the development team could reference directly rather than a spec to interpret.</p>
     </div>
 
     <div class="phase-block">
       <div class="phase-num">Phase 05</div>
-      <h3>Analysis & Pivot</h3>
-      <p>When early tests returned flat results, I reframed the question. The problem wasn't that users didn't understand the product. They couldn't verify the total cost before committing. The design wasn't failing to persuade; it was failing to reassure. That insight shifted the focus of subsequent tests toward persistent pricing visibility rather than persuasion mechanics.</p>
+      <h3>Design, Iteration & Pivot</h3>
+      <p>Variants were designed to test one meaningful change at a time, isolating variables to generate clean learnings. Early tests — trust signals, protection module clarity, value proposition framing — returned mixed results. That feedback forced a reframe: the problem wasn't that users didn't understand the product, it was that they couldn't verify the total cost before committing. The design wasn't failing to persuade; it was failing to reassure. That shift in framing drove everything that followed.</p>
     </div>
 
       </div>
@@ -726,9 +724,9 @@ The gap itself was the diagnosis. Members are high-intent users who've already f
   <div class="container">
     <p class="section-label">Reflection</p>
     <h2>What I Learned</h2>
-    <p>Not every test produced lift. That was valuable. The early flat results forced a reframe that ultimately led to the clearest insight of the project: the checkout wasn't failing to persuade non-members, it was failing to reassure them. That distinction changed everything about how subsequent hypotheses were written.</p>
-    <p>Designing within legal and regulatory constraints turned out to be an advantage rather than a limitation. The European Commission requirements forced pricing transparency that, when designed well, doubled as trust-building, turning compliance into conversion work.</p>
-    <p>The pipeline of 8–12 hypotheses that were designed and ready to run when I left represents work that outlasted my time at Hertz. Building a testing program with that kind of forward momentum, not just shipping individual tests, is something I'd carry into any conversion-focused role.</p>
+    <p>Not every test produced lift. That was valuable. The flat early results forced a reframe that led to the clearest insight of the project: the checkout wasn't failing to persuade non-members, it was failing to reassure them. That distinction shaped every hypothesis that followed.</p>
+    <p>The pipeline of 8–12 concepts designed and ready to run when I left represents work that outlasted my time at Hertz. Building a testing program with that kind of forward momentum, not just shipping individual tests, is something I'd carry into any conversion-focused role.</p>
+    <p>Hertz was also where I started building AI tooling into my design process. Using AI-assisted prototyping to generate functional HTML prototypes accelerated the whole cycle, from hypothesis to something testable, in a way that wouldn't have been possible working in static design alone. That velocity is part of what made the pipeline volume achievable. It's a way of working I've carried forward and kept developing since.</p>
   </div>
 </section>
 
@@ -740,13 +738,12 @@ The gap itself was the diagnosis. Members are high-intent users who've already f
     <div class="callout">
       <p>"The best conversion work isn't about persuasion — it's about removing the doubt that stops a confident decision. Every test in this program was ultimately asking the same question: what does a first-time user need to see, in what order, to feel certain enough to book?"</p>
     </div>
-    <p>This project reflects how I approach feature-level design: start with the user's failure mode, not the business metric. The 5–10% non-member conversion rate wasn't a number to optimize. It was a signal that the checkout was asking users to trust a brand they didn't know yet, without giving them the tools to do it. Once the problem was framed that way, the design solutions followed naturally.</p>
-    <p>I work best on problems like this, where the design challenge is embedded in real business constraints, the answer requires both analytical and craft thinking, and the work has a measurable connection to outcomes.</p>
+    <p>This project reflects how I approach feature-level design: start with the user's failure mode, not the business metric. The 5–10% non-member conversion rate wasn't a number to optimize — it was a signal that the checkout was asking users to trust a brand they didn't know yet, without giving them the tools to do it. Once the problem was framed that way, the solutions followed.</p>
   </div>
 </section>
 
 <footer>
-  <p>Craig Upton — Product Designer · <a href="https://cpupton.dunked.com" style="color:rgba(255,255,255,0.3); text-decoration:none;">cpupton.dunked.com</a></p>
+  <p>Craig Upton — Senior Product Designer · <a href="https://cpupton.dunked.com" style="color:rgba(255,255,255,0.95); text-decoration:none;">cpupton.dunked.com</a></p>
 </footer>
 
 </body>
