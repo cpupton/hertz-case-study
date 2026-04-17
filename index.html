@@ -501,6 +501,26 @@
     margin: 0;
   }
 
+
+  @media (max-width: 540px) {
+    .constraints-table td {
+      display: block;
+      width: 100% !important;
+      min-width: 0 !important;
+      padding: 8px 0 !important;
+    }
+    .constraints-table td:first-child {
+      padding-bottom: 4px !important;
+    }
+    .constraints-table tr {
+      display: block;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--light-gray);
+    }
+    .constraints-table tr:last-child {
+      border-bottom: none;
+    }
+  }
   @media (max-width: 600px) {
     header { padding: 20px 24px; }
     .hero { padding: 56px 24px 52px; }
@@ -508,6 +528,7 @@
     .reflection-grid { grid-template-columns: 1fr; }
     .breakthrough { padding: 32px 24px; }
     .stat-row { grid-template-columns: 1fr 1fr; }
+    .stat-num { font-size: 24px; }
   }
 </style>
 </head>
@@ -590,26 +611,26 @@ The gap was the diagnosis. Members know the brand and move through checkout with
     <h2>Designing Within Real-World Guardrails</h2>
     <p>This wasn't a greenfield redesign. Every hypothesis had to be developed and tested within a set of constraints that made the design challenge genuinely complex:</p>
 
-    <table style="width:100%; border-collapse:collapse; margin:28px 0; font-size:15px; font-weight:300; color:#333; line-height:1.6;">
+    <table class="constraints-table" style="width:100%; border-collapse:collapse; margin:28px 0; font-size:15px; font-weight:300; color:#333; line-height:1.6;">
       <tbody>
         <tr style="border-bottom:1px solid var(--light-gray);">
-          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top;"><strong>European Commission and legal requirements</strong></td>
+          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top; font-weight:600;"><strong>European Commission and legal requirements</strong></td>
           <td style="padding:18px 0; vertical-align:top;">EU regulations mandated specific pricing disclosures before a user could complete a booking. What fees are collected at reservation vs. pickup, what is included in the quoted price, and what must be visible to the user before they tap "Book Now." These weren't suggestions — they were compliance requirements.</td>
         </tr>
         <tr style="border-bottom:1px solid var(--light-gray);">
-          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top;"><strong>Pricing transparency obligations</strong></td>
+          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top; font-weight:600;"><strong>Pricing transparency obligations</strong></td>
           <td style="padding:18px 0; vertical-align:top;">Users had to be clearly informed about the breakdown of charges, with no ambiguity between what's paid now and what's due at the counter. This created real tension with conversion-focused design, where friction is typically minimized.</td>
         </tr>
         <tr style="border-bottom:1px solid var(--light-gray);">
-          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top;"><strong>Consent and disclosure visibility</strong></td>
+          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top; font-weight:600;"><strong>Consent and disclosure visibility</strong></td>
           <td style="padding:18px 0; vertical-align:top;">Legal copy and checkbox consent had to appear in specific locations relative to the CTA, which constrained the layout options available for key conversion elements.</td>
         </tr>
         <tr style="border-bottom:1px solid var(--light-gray);">
-          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top;"><strong>Multi-brand rollout consideration</strong></td>
+          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top; font-weight:600;"><strong>Multi-brand rollout consideration</strong></td>
           <td style="padding:18px 0; vertical-align:top;">While the primary design and testing work was conducted on Hertz.com, successful test variants were subsequently rolled out to Thrifty and Dollar. This meant solutions needed to be structurally sound enough to translate across brand identities without relying on Hertz-specific styling.</td>
         </tr>
         <tr>
-          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top;"><strong>US checkout as benchmark, not template</strong></td>
+          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top; font-weight:600;"><strong>US checkout as benchmark, not template</strong></td>
           <td style="padding:18px 0; vertical-align:top;">The US experience was a reference point for conversion performance, but couldn't be directly replicated due to the legal and regulatory differences between markets.</td>
         </tr>
       </tbody>
