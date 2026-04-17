@@ -537,7 +537,7 @@
         <span>A/B Testing · Friction Reduction · Competitive Audit · Prototyping</span>
       </div>
       <div class="meta-item">
-        <label>Test Concepts</label>
+        <label>Identified Test Concepts</label>
         <span>8–12 Checkout Hypotheses</span>
       </div>
     </div>
@@ -590,13 +590,30 @@ The gap itself was the diagnosis. Members are high-intent users who've already f
     <h2>Designing Within Real-World Guardrails</h2>
     <p>This wasn't a greenfield redesign. Every hypothesis had to be developed and tested within a set of constraints that made the design challenge genuinely complex:</p>
 
-    <ul class="findings">
-      <li><strong>European Commission and legal requirements</strong> — EU regulations mandated specific pricing disclosures before a user could complete a booking. What fees are collected at reservation vs. pickup, what is included in the quoted price, and what must be visible to the user before they tap "Book Now." These weren't suggestions — they were compliance requirements.</li>
-      <li><strong>Pricing transparency obligations</strong> — Users had to be clearly informed about the breakdown of charges, with no ambiguity between what's paid now and what's due at the counter. This created real tension with conversion-focused design, where friction is typically minimized.</li>
-      <li><strong>Consent and disclosure visibility</strong> — Legal copy and checkbox consent had to appear in specific locations relative to the CTA, which constrained the layout options available for key conversion elements.</li>
-      <li><strong>Multi-brand rollout consideration</strong> — While the primary design and testing work was conducted on Hertz.com, successful test variants were subsequently rolled out to Thrifty and Dollar. This meant solutions needed to be structurally sound enough to translate across brand identities without relying on Hertz-specific styling.</li>
-      <li><strong>US checkout as benchmark, not template</strong> — The US experience was a reference point for conversion performance, but couldn't be directly replicated due to the legal and regulatory differences between markets.</li>
-    </ul>
+    <table style="width:100%; border-collapse:collapse; margin:28px 0; font-size:15px; font-weight:300; color:#333; line-height:1.6;">
+      <tbody>
+        <tr style="border-bottom:1px solid var(--light-gray);">
+          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top;"><strong>European Commission and legal requirements</strong></td>
+          <td style="padding:18px 0; vertical-align:top;">EU regulations mandated specific pricing disclosures before a user could complete a booking. What fees are collected at reservation vs. pickup, what is included in the quoted price, and what must be visible to the user before they tap "Book Now." These weren't suggestions — they were compliance requirements.</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--light-gray);">
+          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top;"><strong>Pricing transparency obligations</strong></td>
+          <td style="padding:18px 0; vertical-align:top;">Users had to be clearly informed about the breakdown of charges, with no ambiguity between what's paid now and what's due at the counter. This created real tension with conversion-focused design, where friction is typically minimized.</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--light-gray);">
+          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top;"><strong>Consent and disclosure visibility</strong></td>
+          <td style="padding:18px 0; vertical-align:top;">Legal copy and checkbox consent had to appear in specific locations relative to the CTA, which constrained the layout options available for key conversion elements.</td>
+        </tr>
+        <tr style="border-bottom:1px solid var(--light-gray);">
+          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top;"><strong>Multi-brand rollout consideration</strong></td>
+          <td style="padding:18px 0; vertical-align:top;">While the primary design and testing work was conducted on Hertz.com, successful test variants were subsequently rolled out to Thrifty and Dollar. This meant solutions needed to be structurally sound enough to translate across brand identities without relying on Hertz-specific styling.</td>
+        </tr>
+        <tr>
+          <td style="width:220px; min-width:220px; padding:18px 24px 18px 0; vertical-align:top;"><strong>US checkout as benchmark, not template</strong></td>
+          <td style="padding:18px 0; vertical-align:top;">The US experience was a reference point for conversion performance, but couldn't be directly replicated due to the legal and regulatory differences between markets.</td>
+        </tr>
+      </tbody>
+    </table>
 
     <p>Rather than treating compliance requirements as obstacles to work around, I used them as a forcing function: if we had to surface pricing information prominently anyway, could we do it in a way that also built user confidence?</p>
   </div>
