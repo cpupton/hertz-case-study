@@ -51,6 +51,11 @@
     color: rgba(255,255,255,0.95);
   }
 
+
+  .header-name-line,
+  .header-title-line { display: none; }
+  .header-desktop-name { display: inline; }
+
   .header-tag {
     font-size: 12px;
     letter-spacing: 0.1em;
@@ -523,19 +528,42 @@
   }
   @media (max-width: 600px) {
     header { padding: 20px 24px; }
+    .header-desktop-name { display: none; }
+    .header-name {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .header-name-line,
+    .header-title-line { display: block; }
+    .header-name-line {
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.95);
+    }
+    .header-title-line {
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+    }
     .hero { padding: 56px 24px 52px; }
     .container { padding: 0 24px; }
     .reflection-grid { grid-template-columns: 1fr; }
     .breakthrough { padding: 32px 24px; }
     .stat-row { grid-template-columns: 1fr 1fr; }
-    .stat-num { font-size: 20px; }
+    .stat-num { font-size: 16px; white-space: normal; }
+    .stat-card .stat-num { font-size: 20px; }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <span class="header-name">Craig Upton — Senior Product Designer</span>
+  <span class="header-name"><span class="header-desktop-name">Craig Upton — Senior Product Designer</span><span class="header-name-line">Craig Upton</span><span class="header-title-line">Senior Product Designer</span></span>
   <span class="header-tag">Case Study</span>
 </header>
 
