@@ -17,6 +17,8 @@
     --light-gray: #E8E5DF;
     --accent: #1A1A1A;
     --rule: #D4D0C8;
+    --max-width: 900px;
+    --section-pad: 80px 24px;
   }
 
   html { scroll-behavior: smooth; }
@@ -33,13 +35,16 @@
   /* ── HEADER ── */
   header {
     background: var(--black);
-    padding: 28px 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 28px 0;
     position: sticky;
     top: 0;
     z-index: 100;
+  }
+
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .header-name {
@@ -67,7 +72,7 @@
   /* ── HERO ── */
   .hero {
     background: var(--black);
-    padding: 80px 48px 72px;
+    padding: 72px 0 64px;
     border-bottom: 3px solid var(--hertz-yellow);
     position: relative;
     overflow: hidden;
@@ -98,14 +103,12 @@
     font-weight: 600;
     color: #fff;
     line-height: 1.15;
-    max-width: 680px;
     margin-bottom: 28px;
   }
 
   .hero-sub {
     font-size: 16px;
     color: rgba(255,255,255,0.75);
-    max-width: 680px;
     line-height: 1.65;
     font-weight: 300;
   }
@@ -135,15 +138,23 @@
 
   /* ── LAYOUT ── */
   .container {
-    max-width: 780px;
+    max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 24px;
   }
 
   /* ── SECTIONS ── */
   section {
-    padding: 72px 0;
+    padding: var(--section-pad);
     border-bottom: 1px solid var(--rule);
+  }
+
+  section.bg-white {
+    background: white;
+  }
+
+  section.bg-light {
+    background: var(--off-white);
   }
 
   section:last-child { border-bottom: none; }
@@ -563,8 +574,10 @@
 <body>
 
 <header>
-  <span class="header-name"><span class="header-desktop-name">Craig Upton — Senior Product Designer</span><span class="header-name-line">Craig Upton</span><span class="header-title-line">Senior Product Designer</span></span>
-  <span class="header-tag">Case Study</span>
+  <div class="container">
+    <span class="header-name"><span class="header-desktop-name">Craig Upton — Senior Product Designer</span><span class="header-name-line">Craig Upton</span><span class="header-title-line">Senior Product Designer</span></span>
+    <span class="header-tag">Case Study</span>
+  </div>
 </header>
 
 <div class="hero">
@@ -594,7 +607,7 @@
 </div>
 
 <!-- OVERVIEW -->
-<section>
+<section class="bg-white">
   <div class="container">
     <p class="section-label">Overview</p>
     <h2>The Problem</h2>
@@ -633,7 +646,7 @@ The gap was the diagnosis. Members know the brand and move through checkout with
 </section>
 
 <!-- CONSTRAINTS -->
-<section>
+<section class="bg-light">
   <div class="container">
     <p class="section-label">Constraints</p>
     <h2>Designing Within Real-World Guardrails</h2>
@@ -669,7 +682,7 @@ The gap was the diagnosis. Members know the brand and move through checkout with
 </section>
 
 <!-- PROCESS -->
-<section>
+<section class="bg-white">
   <div class="container">
     <p class="section-label">Process</p>
     <h2>How I Approached the Work</h2>
@@ -709,7 +722,7 @@ The gap was the diagnosis. Members know the brand and move through checkout with
 </section>
 
 <!-- DESIGN IN CONTEXT -->
-<section>
+<section class="bg-light">
   <div class="container">
     <p class="section-label">Design in Context</p>
       <h3 style="font-style:normal; font-family:'DM Sans',sans-serif; font-size:16px; font-weight:500; margin-bottom:10px;">Mobile sticky footer with persistent pricing</h3>
@@ -742,7 +755,7 @@ The gap was the diagnosis. Members know the brand and move through checkout with
 </section>
 
 <!-- BREAKTHROUGH -->
-<section>
+<section class="bg-white">
   <div class="container">
     <p class="section-label">Key Findings</p>
     <h2>What Actually Moved the Needle</h2>
@@ -769,7 +782,7 @@ The gap was the diagnosis. Members know the brand and move through checkout with
 </section>
 
 <!-- REFLECTION -->
-<section>
+<section class="bg-light">
   <div class="container">
     <p class="section-label">Reflection</p>
     <h2>What I Learned</h2>
@@ -780,7 +793,7 @@ The gap was the diagnosis. Members know the brand and move through checkout with
 </section>
 
 <!-- CLOSING -->
-<section>
+<section class="bg-white">
   <div class="container">
     <p class="section-label">Takeaway</p>
     <h2>What This Work Represents</h2>
